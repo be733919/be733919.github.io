@@ -46,7 +46,7 @@
 
             <br>
 
-            <em>Publix Supermarkets, Vero Beach, FL - Grocery Clerk</em></br>
+            <em>Publix Supermarkets, Vero Beach, FL - Grocery Clerk</em><br>
             September 2021 - May 2023<br>
             <ul>
                 Delivered exceptional customer service, assisting customers with locating products and answering inquiries to enhance their shopping experience.<br>
@@ -71,7 +71,7 @@
     <body>
         <h1>Project 1: Google Drive User Manual</h1>
         <img src="Google_Drive.png" alt="Google Drive User Manual">
-        <p><em>A 40 page user manual on the ins and outs of Google Drive including how to create an account, how to collaborate using Google Drive, and more</p></em>
+        <p><em>A 40 page user manual on the ins and outs of Google Drive including how to create an account, how to collaborate using Google Drive, and more</em></p>
         <p><em>Skills Learned:</em> How to create actionable tasks, how to effectively create a manual, how to create proper instructions</p>
     </body>
 
