@@ -6,25 +6,25 @@
         border-collapse: collapse;
     }
     </style>
-    <head>
+   
         <title>Tables and Forms Assignment for CIS 4004</title>
-    </head>
+   
    
 
     <body>
         <h1>Tables and Forms Assignment for CIS 4004</h1>
-        
+        <form action="/submit_pizza_order" method="post">
         <table style="width:30%; border:1px solid black;">
-              <form action="/submit_pizza_order" method="post">
+              
             <tr>
                
                     
             <td><h1>Pizza Ordering Form<br></h1>
             <h2>Contact Information</h2>
             
-                <label for="name">Name: </label> <input type="text" name="name" required><br>
-                <label for="phone">Phone: </label> <input type="number" name="phone" required><br>
-                <label for="email">Email: </label> <input type="email" name="email" required><br>
+                <label for="name">Name:<input type="text" name="name" required> </label> <br>
+                <label for="phone">Phone: <input type="number" name="phone" required></label> <br>
+                <label for="email">Email: <input type="email" name="email" required></label> <br>
             
             <h2>Select Pizza Size</h2>
 
@@ -60,7 +60,7 @@
 
             <h2>Additional Instructions</h2>
                 <textarea name="additional" placeholder="Add instructions"></textarea><br>
-                <input type="submit" value="Submit" /><br><br>
+                <input type="submit" value="Submit"><br><br>
             
             <table style="width:20%; border:1px solid black;">
                 <tr>
@@ -92,11 +92,13 @@
                     <td colspan="3">Count: 4</td>
                 </tr>
             </table>
+        </form>
             
             </td>
             </tr>
         </table>
 
     </body>
+
 
 
