@@ -13,19 +13,21 @@
     <body>
         <h1>Tables and Forms Assignment for CIS 4004</h1>
         
-        <table style="width:100%; border:1px solid black;">
+        <table style="width:30%; border:1px solid black;">
             <tr>
+                <form action="/submit_pizza_order" method="post">
+                    
             <td><h1>Pizza Ordering Form<br></h1>
             <h2>Contact Information</h2>
             
-                <label for="name">Name: </label> <input type="text" name="name" /><br>
-                <label for="phone">Phone: </label> <input type="number" name="phone" /><br>
-                <label for="email">Email: </label> <input type="email" name="email" /><br>
+                <label for="name">Name: </label> <input type="text" name="name" required/><br>
+                <label for="phone">Phone: </label> <input type="number" name="phone" required/><br>
+                <label for="email">Email: </label> <input type="email" name="email" required/><br>
             
             <h2>Select Pizza Size</h2>
 
                 <label for="size">Size: </label>
-                <select name="size" id="size">
+                <select name="size" id="size" required>
                     <option value="">--Select Size--</option>
                     <option value="Medium">Medium</option>
                     <option value="Large">Large</option>
@@ -33,11 +35,11 @@
                 </select>
 
             <h2>Select Sauce</h2>
-                <input type="radio" id="Marinara" name="sauce" value="Marinara">
+                <input type="radio" id="Marinara" name="sauce" value="Marinara" required>
                 <label for="Marinara">Marinara</label><br>
-                <input type="radio" id="Ranch" name="sauce" value="Ranch">
+                <input type="radio" id="Ranch" name="sauce" value="Ranch" required>
                 <label for="Ranch">Ranch</label><br>
-                <input type="radio" id="No Sauce" name="sauce" value="No Sauce">
+                <input type="radio" id="No Sauce" name="sauce" value="No Sauce" required>
                 <label for="No Sauce">No Sauce</label><br>
 
             <h2>Select Toppings</h2>
@@ -57,7 +59,7 @@
             <h2>Additional Instructions</h2>
                 <textarea name="additional" placeholder="Add instructions"></textarea><br>
                 <input type="submit" value="Submit" /><br><br>
-
+            </form>
             <table style="width:20%; border:1px solid black;">
                 <tr>
                     <td><strong>Developer</strong></td>
