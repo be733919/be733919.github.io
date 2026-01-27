@@ -1,85 +1,97 @@
 <!DOCTYPE html>
-
 <html lang="en">
     <head>
-        <title>HTML Resume for CIS4004</title>
+        <title>Tables and Forms Assignment for CIS 4004</title>
     </head>
+    <style>
+    table, th, td{
+        border:1px solid black;
+        border-coillapse: collapse;
+    }
+    </style>
 
     <body>
-        <h1>HTML Resume for CIS4004</h1>
-        <h2>
-            Ben Hamilton <br>
-            be733919@ucf.edu <br>
-            https://www.linkedin.com/in/benjaminxhamilton/<br>
-        </h2>
+        <h1>Tables and Forms Assignment for CIS 4004</h1>
+        
+        <table style="width:30%; border:1px solid black;">
+            <tr>
+                <form action="/submit_pizza_order" method="post">
+            <td><h1>Pizza Ordering Form<br></h1>
+            <h2>Contact Information</h2>
+            
+                <label for="name">Name: </label> <input type="text" name="name" required/><br>
+                <label for="phone">Phone: </label> <input type="number" name="phone" required/><br>
+                <label for="email">Email: </label> <input type="email" name="email" required/><br>
+            
+            <h2>Select Pizza Size</h2>
 
-        <p>
-            I bring both technical experience and communication strength needed to succeed in most positions.
-            My internship at Kimley-Horn and previous role at Publix Supermarkets has prepared me to manage
-            hardware, software, and customer service challenges with profesionalism and efficiency. 
-        </p>
+                <label for="size">Size: </label>
+                <select name="size" id="size" required>
+                    <option value="">--Select Size--</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Large">Large</option>
+                    <option value="XLarge">XLarge</option>
+                </select>
 
+            <h2>Select Sauce</h2>
+                <input type="radio" id="Marinara" name="sauce" value="Marinara" required>
+                <label for="Marinara">Marinara</label><br>
+                <input type="radio" id="Ranch" name="sauce" value="Ranch" required>
+                <label for="Ranch">Ranch</label><br>
+                <input type="radio" id="No Sauce" name="sauce" value="No Sauce" required>
+                <label for="No Sauce">No Sauce</label><br>
 
+            <h2>Select Toppings</h2>
+                <input type="checkbox" id="Pepperoni" name="topping" value="Pepperoni">
+                <label for="Pepperoni">Pepperoni</label>
+                <input type="checkbox" id="Sausage" name="topping" value="Sausage">
+                <label for="Sausage">Sausage</label><br>
+                <input type="checkbox" id="Mushroom" name="topping" value="Mushroom">
+                <label for="Mushroom">Mushroom</label>
+                <input type="checkbox" id="Pineapple" name="topping" value="Pineapple">
+                <label for="Pineapple">Pineapple</label><br>
+                <input type="checkbox" id="Peppers" name="topping" value="Peppers">
+                <label for="Peppers">Peppers</label>
+                <input type="checkbox" id="Onions" name="topping" value="Onions">
+                <label for="Onions">Onions</label><br>
 
+            <h2>Additional Instructions</h2>
+                <textarea name="additional" placeholder="Add instructions"></textarea><br>
+                <input type="submit" value="Submit" /><br><br>
+            </form>
+            <table style="width:20%; border:1px solid black;">
+                <tr>
+                    <td><strong>Developer</strong></td>
+                    <td><strong>Title</strong></td>
+                    <td><strong>Year</strong></td>
+                </tr>
+                <tr>
+                    <td rowspan="2"> Treyarch</td>
+                    <td> Call of Duty: Black Ops II</td>
+                    <td> 2012 </td>
 
-
-        <h3>Education</h3>
-
-        <body>
-            <em>University of Central Florida - Orlando, FL - B.A., Science (Information Technology)</em> <br>
-            August 2022 - Present (Excpected Graduation: May 2027)<br>
-            <ul>
-                National Honor Society Member <br>
-                First Generation College of Engineering and Computer Science Scholarship <br>
-            </ul>
-        </body>
-
-        <h3>Experience</h3>
-        <body>
-            <em>Kimley-Horn and Associates, Orlando, FL - Information Technology Intern</em><br>
-            June 2024 - Present<br>
-            <ul>
-                Provided Tier 1 and Tier 2 technical support to staff across multiple office locations, resolving hardward, software, and networking issues efficiently.<br>
-                Assisted in the deployment and configuration of new workstations, ensuring seamless integration with existing systems and minimal downtime.<br>
-                Supported Active Directory account management including password resets, user provisioning, and permission updates.<br>
-            </ul>
-
-            <br>
-
-            <em>Publix Supermarkets, Vero Beach, FL - Grocery Clerk</em></br>
-            September 2021 - May 2023<br>
-            <ul>
-                Delivered exceptional customer service, assisting customers with locating products and answering inquiries to enhance their shopping experience.<br>
-                Maintained organized and well-stocked shelves, ensuring product availability and visual appeal.<br>
-                Collaborated with team members to efficiently manage inventory and restock items during peak hours.<br>
-            </ul>
-
-        </body>
-
-        <h3>Skills</h3>
-        <body>
-            <ul>
-                Programming Languages: Python, JavaScript, HTML/CSS, C, Java<br>
-                Technical Tools & Systems: Windows OS, Microsoft 365, SCCM, VPN Support, Helpdesk Ticketing (ServiceNow), Windows Server</br>
-                Soft Skills: Customer Service, Problem-Solving, Team Collaboration, Time Management<br>
-            </ul>
-
+                </tr>
+                <tr>
+                    <td> Call of Duty: Black Ops III</td>
+                    <td> 2015 </td>
+                </tr>
+                <tr>
+                    <td>Fromsoftware</td>
+                    <td> Elden Ring</td>
+                    <td> 2022 </td>
+                </tr>
+                <tr>
+                    <td>Hazelight Studios</td>
+                    <td> It Takes Two</td>
+                    <td> 2021 </td>
+                </tr>
+                <tr>
+                    <td colspan="3">Count: 4</td>
+                </tr>
+            </table>
+            
+            </td>
+            </tr>
+        </table>
 
     </body>
-
-
-    <body>
-        <h1>Project 1: Google Drive User Manual</h1>
-        <img src="Google_Drive.png" alt="Google Drive User Manual">
-        <p><em>A 40 page user manual on the ins and outs of Google Drive including how to create an account, how to collaborate using Google Drive, and more</p></em>
-        <p><em>Skills Learned:</em> How to create actionable tasks, how to effectively create a manual, how to create proper instructions</p>
-    </body>
-
-    <body> 
-        <h1>Project 2: HTML Resume</h1>
-        <img src="project 2.png" alt="Food Ordering System">
-        <p><em>A java program used to create a food ordering system, that takes in an order using a queue system and processes and prints correct order.</em></p>
-        <p><em>Skills Learned:</em> How to use java to create a queue, using instance variables, methods, and other things to create a working program to create a food order.</p>
-    </body>
-
-</html>
