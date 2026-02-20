@@ -4,3 +4,4 @@
 <a href="/html-5.html">html-5.html</a>
 <a href="/html-6.html">html-6.html</a>
 <a href="/basicjs.html">basicjs.html</a>
+<a href="/dom_manip.html">dom_manip.html</a>
