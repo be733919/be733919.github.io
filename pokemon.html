@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { background-color: lightblue; display: flex; flex-direction: column; align-items: center; font-family: sans-serif; }
+        .main-card { 
+            background-color: white; 
+            border: 8px solid goldenrod; 
+            border-radius: 50px; 
+            padding: 40px; 
+            width: 500px; 
+            text-align: center; 
+            margin-top: 20px;
+        }
+        .search-area {
+             margin-bottom: 20px; 
+            }
+        #poke-img {
+             width: 250px; 
+             height: 250px; 
+             margin: 10px 0; 
+            }
+        .audio { 
+            background: white; 
+            border-radius: 30px; 
+            padding: 10px; 
+            margin: 20px 0; }
+        .moves-grid { display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 10px; 
+            margin-bottom: 20px; }
+        select { 
+            width: 100%; 
+            border: 1px solid gray; }
+        #team-display { 
+            margin-top: 30px;
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 15px; justify-content: center; }
+        .team-member { 
+            border: 2px solid goldenrod; 
+            background: white; 
+            padding: 10px; 
+            border-radius: 10px; 
+            text-align: center; 
+            width: 150px; }
+        .hidden { 
+            display: none;
+         }
+    </style>
+</head>
+<body>
+
+    <div class="main-card">
+        <div class="search-area">
+            <label for="poke-input">Name or ID</label><br>
+            <input type="text" id="poke-input">
+            <button id="btn">Find</button>
+        </div>
+
+        <div id="poke-data" class="hidden">
+            <img id="poke-img" src="" alt="Pokemon">
+            
+            <div class="audio-container">
+                <audio id="poke-audio" controls></audio>
+            </div>
+
+            <div class="moves-grid">
+                <select class="move-sel"></select>
+                <select class="move-sel"></select>
+                <select class="move-sel"></select>
+                <select class="move-sel"></select>
+            </div>
+
+            <button id="add-btn">Add to Team</button>
+        </div>
+    </div>
+
+    <div id="team-display"></div>
+
+    <script src="pokemon.js"></script>
+</body>
+</html>
